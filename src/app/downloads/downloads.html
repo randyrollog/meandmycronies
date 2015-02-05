@@ -1,0 +1,35 @@
+<div class="stars"></div>
+<div class="twinkling"></div>
+<div class="clouds"></div>
+
+<div class="container">
+  <div class="downloads-page-container">
+    <!-- <div ng-include="'components/navbar/navbar.html'"></div> -->
+    <div class="follow-wrapper">
+
+      <h2>1. Follow Cronies <span>(choose one or more)</span></h2>
+      <!-- <div id="follow_btn" class="follow_btns" ng-click="connectAuth();">1. FOLLOW</div> -->
+      
+      <ul class="networks-wrapper">
+
+        <li ng-repeat="network in socialNetworks">
+          <div class="socialContainer">
+            <label for="checkbox-{{ network.name }}">{{ network.title }}
+              <input type="checkbox" id="checkbox-{{ network.name }}" class="social-checks" name="checkbox-{{ network.name }}">
+            </label>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="download-wrapper">
+
+      <h2>2. Download</h2>
+      <a href="" id="download-btn" class="download-btns">DOWNLOAD</a>
+
+    </div>
+
+  </div>
+</div>

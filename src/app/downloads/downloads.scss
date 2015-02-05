@@ -1,0 +1,192 @@
+.downloads-page-container {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  margin-top: 50px;
+  z-index: 55555;
+
+  h2 {
+    font-family: $font;
+    font-weight: 400;
+    text-align: left;
+
+    span {
+      font-size: 12px;
+    }
+
+  }
+
+}
+
+.follow-wrapper {
+  margin: 0 auto 50px;
+}
+
+ul.networks-wrapper {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+
+  li {
+    border-bottom: 1px solid #E0E0E0;
+    padding: 30px 20px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+  }
+
+}
+
+.follow_btns {
+  width: 200px;
+  display: inline-block;
+  border: 2px solid rgb(95, 95, 95);
+  text-align: center;
+  height: 60px;
+  vertical-align: middle;
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 60px;
+  color: rgb(95, 95, 95);
+  cursor: pointer;
+}
+
+.download-wrapper {
+  position: relative;
+  text-align: center;
+
+  h2 {
+    text-align: left;
+  }
+
+  .download-btns {
+    width: 200px;
+    border: 2px solid rgb(95, 95, 95);
+    text-align: center;
+    height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 60px;
+    text-decoration: none;
+    color: rgb(205, 205, 205);
+    background: rgb(182, 182, 182);
+    margin: 0 auto;
+  }
+
+}
+
+.social-checks {
+  float: right;
+}
+
+/* ============================================================================================== 
+clouds and background
+================================================================================================= */
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color:rgba(33, 33, 33, 0.9);
+    color:#ffffff;
+    display:block;
+    font: 14px/1.3 Arial,sans-serif;
+    height:50px;
+    position:relative;
+    z-index:5;
+}
+h2{
+    margin-top: 30px;
+    text-align: center;
+}
+header h2{
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 80%;
+    text-align: center;
+}
+header a, a:visited {
+    text-decoration:none;
+    color:#fcfcfc;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+    background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+    z-index:3;
+
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
+}
